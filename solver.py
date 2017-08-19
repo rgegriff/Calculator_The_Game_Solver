@@ -40,15 +40,20 @@ def replace(old, new):
     f.name = "replace(%s, %s)"%(old, new)
     return f
 
+def sum_value():
+    f = lambda n: sum(map(int, str(n)))
+    f.name = "sum()"
+    return f
+
 # solver
-def solve(moves=5,
-          start=12,
-          goal=123,
+def solve(moves=4,
+          start=3,
+          goal=8,
           functions=[
-    append_digit(12),
-    add(1),
-    replace(12, 2),
-    reverse()
+    append_digit(3),
+    sum_value(),
+    replace(3, 1),
+    add(33)
           ]):
     combinations=product(enumerate(functions), repeat=moves)
     for combo in combinations:
@@ -73,4 +78,4 @@ def solve(moves=5,
         except:
             continue
 
-#solve()
+solve()
