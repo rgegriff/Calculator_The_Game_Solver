@@ -37,6 +37,8 @@ All of the functions generate callable functions. This is to allow dynamic gener
   Replaces every instance of old in new
 - sum_value()
   Sums all digits in value
+- invert_sign()
+  inverts the sign by multiplying number by -1
 
 You can also view the name of the transform functions with `.name`
 Example:
