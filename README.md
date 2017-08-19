@@ -7,13 +7,14 @@ Arguments to solve():
 -  `function` is a list of transformation functions to apply to the value
 
 example:
-    allowed_functions = [
+```    allowed_functions = [
       append_digit(12), # adds 12 to the end of the value
       add(1), # adds 1 to the value
       replace(12, 2),
       reverse()
     ]
     solve(moves=5, start=12, goal=123, functions=allowed_functions)
+```
 
 ## Supported Button Functions
 All of the functions generate callable functions. This is to allow dynamic generation of transforms on the value
@@ -39,6 +40,8 @@ All of the functions generate callable functions. This is to allow dynamic gener
 
 You can also view the name of the transform functions with `.name`
 Example:
+```
     transform_function = add(3)
     transform_function(7) # returns 10
     transform_function.name # returns 'add(3)'
+```
