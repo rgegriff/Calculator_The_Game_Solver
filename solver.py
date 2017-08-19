@@ -45,15 +45,21 @@ def sum_value():
     f.name = "sum()"
     return f
 
+def invert_sign():
+    f = lambda n: n*-1
+    f.name = "invert_sign()"
+    return f
+
 # solver
-def solve(moves=4,
-          start=3,
-          goal=8,
+def solve(moves=5,
+          goal=-17,
+          start=105,
           functions=[
-    append_digit(3),
+    invert_sign(),
     sum_value(),
-    replace(3, 1),
-    add(33)
+    mul_by(4),
+    sub(5),
+    div_by(5)
           ]):
     combinations=product(enumerate(functions), repeat=moves)
     for combo in combinations:
