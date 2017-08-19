@@ -2,9 +2,9 @@
 I hacked together a very simple solver for calculator the game
 
 Arguments to solve():
-  `moves` is the number of moves allowed in the level
-  `goal` is the desired final value
-  `function` is a list of transformation functions to apply to the value
+-  `moves` is the number of moves allowed in the level
+-  `goal` is the desired final value
+-  `function` is a list of transformation functions to apply to the value
 
 example:
     allowed_functions = [
