@@ -7,7 +7,8 @@ Arguments to solve():
 -  `function` is a list of transformation functions to apply to the value
 
 example:
-```    allowed_functions = [
+```   
+    allowed_functions = [
       append_digit(12), # adds 12 to the end of the value
       add(1), # adds 1 to the value
       replace(12, 2),
